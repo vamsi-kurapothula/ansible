@@ -3,7 +3,7 @@ regions:
 - us-east-1
 filters:
   tag:name: frontend
-  instance-state-name: running
+  instance-state-name : running
 hostnames:
   # You can also specify a list in order of precedence for hostname variables.
   - ip-address
