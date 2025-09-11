@@ -7,6 +7,11 @@ filters:
 hostnames:
   # You can also specify a list in order of precedence for hostname variables.
   - private-ip-address
+keyed_groups:
+  # add hosts to tag_Name_value groups for each aws_ec2 host's tags.Name variable.
+  - key: tags.Name
+    prefix: ""
+    separator: ""
 compose:
   # This sets the `ansible_host` variable to connect with the private IP address without changing the hostname.
   ansible_host: private_ip_address
